@@ -1,0 +1,29 @@
+# Dependencies
+node_modules/
+client/node_modules/
+
+# Environment Variables & Secrets
+.env
+.env.local
+
+# Runtime Data, Configurations & Hosted Sites
+data/
+
+# Build Output
+dist/
+client/dist/
+
+# Archives & Backups
+*.zip
+*.tar.gz
+*.bak
+
+# Logs
+*.log
+logs/
+
+# OS / Editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

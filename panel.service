@@ -1,0 +1,16 @@
+[Unit]
+Description=HostPanel - VPS Hosting Web Control Panel
+After=network.target
+
+[Service]
+Type=simple
+User=root
+WorkingDirectory=/opt/panel-hosting
+ExecStart=/usr/bin/node /opt/panel-hosting/server.js
+Restart=always
+RestartSec=3
+Environment=NODE_ENV=production
+LimitNOFILE=65536
+
+[Install]
+WantedBy=multi-user.target
